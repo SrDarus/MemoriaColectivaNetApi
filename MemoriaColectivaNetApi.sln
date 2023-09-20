@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoriaColectivaNetApi", "MemoriaColectivaNetApi\MemoriaColectivaNetApi.csproj", "{9F27D335-C422-4216-A53A-687AD1B34ADB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoriaColectivaNetApi", "MemoriaColectivaNetApi\MemoriaColectivaNetApi.csproj", "{9F27D335-C422-4216-A53A-687AD1B34ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9F27D335-C422-4216-A53A-687AD1B34ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F27D335-C422-4216-A53A-687AD1B34ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F27D335-C422-4216-A53A-687AD1B34ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
