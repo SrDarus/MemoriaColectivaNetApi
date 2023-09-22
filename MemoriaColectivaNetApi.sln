@@ -5,7 +5,11 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoriaColectivaNetApi", "MemoriaColectivaNetApi\MemoriaColectivaNetApi.csproj", "{9F27D335-C422-4216-A53A-687AD1B34ADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "DTO\DTOs.csproj", "{C6EDE195-0938-46C8-9F35-50F9DC77F75C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{BD66FCEC-BBD9-4C3D-A1DB-443660B5DA09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11A76FE0-23F9-45E2-8C55-CCE6A756AD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EDE195-0938-46C8-9F35-50F9DC77F75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EDE195-0938-46C8-9F35-50F9DC77F75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EDE195-0938-46C8-9F35-50F9DC77F75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EDE195-0938-46C8-9F35-50F9DC77F75C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD66FCEC-BBD9-4C3D-A1DB-443660B5DA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD66FCEC-BBD9-4C3D-A1DB-443660B5DA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD66FCEC-BBD9-4C3D-A1DB-443660B5DA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD66FCEC-BBD9-4C3D-A1DB-443660B5DA09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
