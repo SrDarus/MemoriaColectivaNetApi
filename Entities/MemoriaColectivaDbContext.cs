@@ -13,8 +13,38 @@ namespace Entities
         {
         }
 
-        public DbSet<Pais> Paises { get; set; }
-        public DbSet<Permiso> Permisos { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+
+        public DbSet<Pais> Paises { get; set; }
+
+        public DbSet<UsuarioPermiso> UsuarioPermiso { get; set; }
+
+        public DbSet<Permiso> Permisos { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Permiso>().HasData(
+                new Permiso(1, "ADMIN"),
+                new Permiso(2, "READ"),
+                new Permiso(3, "WRITE")
+            );
+            modelBuilder.Entity<Usuario>().HasData(
+                new Usuario
+                {
+                    Id = 1,
+                    Username = "darus",
+                    Password = "admin"
+                }
+            );
+            modelBuilder.Entity<UsuarioPermiso>().HasData(
+                new UsuarioPermiso
+                {
+                    Id = 1,
+                    UsuarioId = 1,
+                    PermisoId = 1
+                }
+            );
+        }
     }
 }

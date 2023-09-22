@@ -9,9 +9,20 @@ namespace Entities
 {
     public class Permiso
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required]
         [StringLength(20)]
         public string Name { get; set; }
+
+        public Permiso()
+        {
+
+        }
+
+        public Permiso(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
 }
