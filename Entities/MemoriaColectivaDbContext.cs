@@ -17,13 +17,13 @@ namespace Entities
 
         public DbSet<Pais> Paises { get; set; }
 
-        public DbSet<UsuarioPermiso> UsuarioPermiso { get; set; }
-
         public DbSet<Permiso> Permisos { get; set; }
 
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        {         
+
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Permiso>().HasData(
                 new Permiso(1, "ADMIN"),
                 new Permiso(2, "READ"),
@@ -37,14 +37,21 @@ namespace Entities
                     Password = "admin"
                 }
             );
-            modelBuilder.Entity<UsuarioPermiso>().HasData(
-                new UsuarioPermiso
-                {
-                    Id = 1,
-                    UsuarioId = 1,
-                    PermisoId = 1
-                }
-            );
+
+
+            modelBuilder.Entity<Usuario>()
+                .HasMany(p => p.Permisos)
+                .WithMany(t => t.Usuarios)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UsuarioPermiso",
+                    r => r.HasOne<Permiso>().WithMany().HasForeignKey("PermisoId"),
+                    l => l.HasOne<Usuario>().WithMany().HasForeignKey("UsuarioId"),
+                    je =>
+                    {
+                        je.HasKey("PermisoId", "UsuarioId");
+                        je.HasData( new { UsuarioId = 1, PermisoId = 1 });
+                    });
+
         }
     }
 }

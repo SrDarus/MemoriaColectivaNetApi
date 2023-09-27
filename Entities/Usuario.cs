@@ -19,5 +19,7 @@ namespace Entities
         [StringLength(20)]
         public string Password { get; set; }
 
+        public IEnumerable<Permiso> Permisos { get; set; }
+
     }
 }

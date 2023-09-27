@@ -14,6 +14,8 @@ namespace Entities
         [StringLength(20)]
         public string Name { get; set; }
 
+        public IEnumerable<Usuario> Usuarios { get; set; }
+
         public Permiso()
         {
 
